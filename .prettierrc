@@ -1,1 +1,5 @@
+tabWidth: 2
+printWidth: 80
+singleQuote: false
+tabs: true
 plugins: ["prettier-plugin-astro"]
