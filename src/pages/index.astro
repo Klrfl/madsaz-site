@@ -4,5 +4,56 @@ import BaseLayout from "../layouts/baseLayout.astro";
 
 <BaseLayout title="Madsaz - Home">
   <h1>allam brisik</h1>
+
+  <footer>
+    <section class="footer__identity">
+      <img src="" alt="" />
+      <h2>Madsaz</h2>
+      <p>Baby Cry Translator</p>
+    </section>
+
+    <ul class="nav-links footer__socials">
+      <li><a href="#">Social media</a></li>
+      <li><a href="#">Social media</a></li>
+      <li><a href="#">Social media</a></li>
+      <li><a href="#">Social media</a></li>
+    </ul>
+
+    <ul class="nav-links footer__sitemap">
+      <p>About</p>
+      <li><a href="#">How to</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Install now</a></li>
+    </ul>
+  </footer>
 </BaseLayout>
 
+<style>
+  footer {
+    padding: 2rem;
+
+    display: grid;
+    grid-template-areas:
+      "identity - sitemap"
+      "socials - sitemap";
+    grid-template-columns: 35ch 1fr 35ch;
+  }
+
+  .footer__identity {
+    grid-area: identity;
+  }
+
+  .footer__socials {
+    display: flex;
+    grid-area: socials;
+  }
+
+  .footer__socials a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+  }
+
+  .footer__sitemap {
+    grid-area: sitemap;
+  }
+</style>
