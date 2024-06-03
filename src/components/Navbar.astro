@@ -1,27 +1,59 @@
 <nav>
+    <div class="logo"><a href="/">Madsaz Cry Translator</a></div>
     <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/howto">How to</a> </li>
+        <button><a href="#">Install now</a></button>
     </ul>
 </nav>
 
 <style>
-    ul{
+    nav{
         background-color: white;
-        list-style-type: none;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-    li{
+
+    .logo{
         
+    }
+
+    .logo a{
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 600;
+        color: background-color: rgb(28, 77, 118);
 
     }
+
+    ul{
+        
+        list-style-type: none;
+        display: flex;
+        
+    }
+
     li a{
         text-decoration: none;
         color: rgb(28, 77, 118);    
-        padding: 8px;
+        padding: 15px;
     }
+
     li a:hover{
         color: rgb(210, 112, 127); 
+    }
+
+    button{
+        background-color: rgb(28, 77, 118);
+        padding: 3px;
+        width: 100px;
+        border-radius: 50px;
+    }
+    
+    button a{
+        text-decoration: none;
+        color: white;
     }
 </style>
