@@ -3,8 +3,36 @@ import BaseLayout from "../layouts/baseLayout.astro";
 ---
 
 <BaseLayout title="Madsaz - About">
-  <h1>Understand your baby.</h1>
-  <p>“Madsaz” helps translate (identify) an infant (0-3 months old) cries, to make you understand your baby better. </p>
-    <p>There are five languages of the DBL version that can be recognized by this application.</p>
+  <div class="text">
+    <h1>Understand your baby.</h1>
+    <p>“Madsaz” helps translate (identify) an infant (0-3 months old) cries, to make you understand your baby better. There are five languages of the DBL version that can be recognized by this application.</p>
+  </div>  
+  <button><a href="#">Install now</a></button>
+  <p class="text1"><i>Available in Playstore</i></p>
 </BaseLayout>
 
+<style>
+  body{
+    background-color: rgb(234, 172, 182);
+  }
+
+  .text{
+    color: rgb(137, 33, 50);
+  }
+
+  .text1{
+    color: white;
+  }
+
+  button{
+    background-color: rgb(64, 136, 198);
+    padding: 6px;
+    width: 100px;
+    border-radius: 50px;
+  }
+
+  button a{
+    text-decoration: none;
+    color: white;
+  }
+</style>
