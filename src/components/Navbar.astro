@@ -1,59 +1,49 @@
 <nav>
-    <div class="logo"><a href="/">Madsaz Cry Translator</a></div>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/howto">How to</a> </li>
-        <button><a href="#">Install now</a></button>
-    </ul>
+  <div class="logo"><a href="/">Madsaz Cry Translator</a></div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/howto">How to</a></li>
+    <li><a class="btn" href="#">Install now</a></li>
+  </ul>
 </nav>
 
 <style>
-    nav{
-        background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+  nav {
+    background-color: white;
+    padding: 1rem 1.5rem;
 
-    .logo{
-        
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    .logo a{
-        text-decoration: none;
-        font-size: 25px;
-        font-weight: 600;
-        color: background-color: rgb(28, 77, 118);
+  .logo a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+  }
 
-    }
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+  }
 
-    ul{
-        
-        list-style-type: none;
-        display: flex;
-        
-    }
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(28, 77, 118);
+    padding: 1rem 1.5rem;
+    display: inline-block;
+  }
 
-    li a{
-        text-decoration: none;
-        color: rgb(28, 77, 118);    
-        padding: 15px;
-    }
+  .nav-links a:hover {
+    color: rgb(210, 112, 127);
+  }
 
-    li a:hover{
-        color: rgb(210, 112, 127); 
-    }
-
-    button{
-        background-color: rgb(28, 77, 118);
-        padding: 3px;
-        width: 100px;
-        border-radius: 50px;
-    }
-    
-    button a{
-        text-decoration: none;
-        color: white;
-    }
+  .nav-links .btn {
+    background-color: rgb(28, 77, 118);
+    border-radius: 50px;
+    color: white;
+  }
 </style>
