@@ -3,6 +3,7 @@ import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
 
 import "../styles/app.css";
+import "@fontsource/inter";
 const { title = "Madsaz" } = Astro.props;
 ---
 
@@ -14,9 +15,10 @@ const { title = "Madsaz" } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <Navbar></Navbar>
+    <Navbar />
     <slot />
 
     <Footer />
   </body>
 </html>
+
