@@ -1,8 +1,8 @@
 <footer>
   <section class="footer__identity">
-    <img src="" alt="" />
-    <h2>Madsaz</h2>
-    <p>Baby Cry Translator</p>
+    <img class="img" src="" alt="" />
+    <h2 class="heading">Madsaz</h2>
+    <p class="paragraph">Baby Cry Translator</p>
   </section>
 
   <ul class="nav-links footer__socials">
@@ -13,7 +13,7 @@
   </ul>
 
   <ul class="nav-links footer__sitemap">
-    <p>About</p>
+    <h2>Madsaz</h2>
     <li><a href="#">How to</a></li>
     <li><a href="#">About us</a></li>
     <li><a href="#">Install now</a></li>
@@ -29,10 +29,30 @@
       "identity - sitemap"
       "socials - sitemap";
     grid-template-columns: 35ch 1fr 35ch;
+
+    @media screen and (max-width: 50em) {
+      grid-template-areas: "identity" "socials" "sitemap";
+      grid-template-columns: 1fr;
+    }
+  }
+
+  footer h2 {
+    margin-block: 0 0.5rem;
   }
 
   .footer__identity {
     grid-area: identity;
+
+    display: grid;
+    grid-template-areas: "img heading" "img paragraph";
+  }
+
+  .footer__identity .img {
+    grid-area: img;
+  }
+
+  .footer__identity .paragraph {
+    margin-block: 0 0.2rem;
   }
 
   .footer__socials {
